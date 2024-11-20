@@ -1,0 +1,84 @@
+:root {
+    --font-outfit: "Outfit", sans-serif;
+    --dark-blue: #264059;
+    --light-blue: #6EA0B1;
+    --dark-green: #475808;
+    --light-green: #9AB031;
+    --orange: #E5690B;
+    --brown: #9F5D35;
+    --area: #DECA98;
+}
+
+body {
+    background-image: url(../images/water-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: var(--font-outfit);
+}
+
+.header {
+    background: linear-gradient(180deg, #264059 0%, rgba(0,0,27,0) 100%);
+    padding: 20px 0;
+}
+
+.header .infos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header .nav-bar li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.header .img-logo {
+    width: 100px;
+    height: 100px;
+    transition: .3s;
+    margin-right: 30px;
+}
+
+.header .img-logo:hover {
+    scale: 1.2;
+}
+
+.header h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #fff;
+}
+
+.header a {
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    padding: 5px 15px;
+    transition: .3s;
+}
+
+.header a:hover {
+    scale: 1.1;
+    background-color: var(--light-blue);
+    box-shadow: 0px 10px 30px 0px rgba(110,160,177,1);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .content-box {
+    width: 50vw;
+    background-color: rgba(255,255,255,.2);
+    padding: 40px;
+    border: 1px solid #fff;
+    border-radius: 40px;
+}
