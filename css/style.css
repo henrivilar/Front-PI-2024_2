@@ -80,7 +80,6 @@ body {
 }
 
 .main .content-box {
-    width: 60vw;
     background-color: rgba(255,255,255,.5);
     padding: 40px;
     border: 1px solid #fff;
@@ -124,6 +123,9 @@ body {
 /* NOTEBOOK */
 @media (min-width: 1024px) and (max-width: 1440px) {
 
+    .main .content-box {
+        width: 80vw;
+    }
 }
 
 /* TABLET */
