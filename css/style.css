@@ -36,6 +36,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 30px;
+    flex-wrap: wrap;
 }
 
 .header .img-logo {
@@ -80,6 +81,7 @@ body {
 }
 
 .main .content-box {
+    width: 60vw;
     background-color: rgba(255,255,255,.5);
     padding: 40px;
     border: 1px solid #fff;
@@ -119,6 +121,95 @@ body {
 .main .sobre-nos span {
     font-weight: bold;
 }
+
+.content-box .form-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-box .form-formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-box .form-formulario h3 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.content-box .form-formulario div {
+    margin: 10px 0 20px 0;
+}
+
+.content-box .form-formulario input, .content-box .form-formulario textarea {
+    width: 100%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #264059;
+    outline: none;
+    resize: none;
+}
+
+.content-box .form-formulario .inputs-nome input {
+    width: auto;
+}
+
+.content-box .form-formulario button {
+    width: 100%;
+    background-color: transparent;
+    border: 2px solid #303030;
+    padding: 10px 0;
+    border-radius: 10px;
+    color: var(--dark-gray);
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .3s;
+}
+
+.content-box .form-formulario button:hover {
+    scale: 1.05;
+    background-color: var(--light-blue);
+    box-shadow: 0px 10px 30px 0px rgba(110,160,177,1);
+    border: 2px solid #fff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.content-box .form-container .form-contatos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    border: 2px solid #264059;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.content-box .form-container .form-contatos .email a {
+    color: #6EA0B1;
+}
+
+.content-box .form-container .form-contatos .redes-sociais {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.content-box .form-container .form-contatos .redes-sociais a {
+    color: #6EA0B1;
+    transition: .3s;
+}
+
+.content-box .form-container .form-contatos .redes-sociais a:hover {
+    scale: 1.4;
+    color: #264059;
+}
+
+.content-box .form-container .form-img img {
+    border-radius: 20px;
+}
+
 
 /* NOTEBOOK */
 @media (min-width: 1024px) and (max-width: 1440px) {
