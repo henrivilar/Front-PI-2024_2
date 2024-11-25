@@ -187,6 +187,9 @@ body {
     padding: 30px;
     border-radius: 10px;
 }
+.content-box .form-container .form-contatos h4 {
+    font-weight: bold;
+}
 
 .content-box .form-container .form-contatos .email a {
     color: #6EA0B1;
@@ -275,10 +278,74 @@ body {
 
 /* TABLET */
 @media (min-width: 768px) and (max-width: 1023px) {
+    .main .content-box {
+        width: 80vw;
+    }
 
+    .sobre-nos, .dispositivo {
+        flex-direction: column;
+    }
+
+    .projeto, .form-container {
+        flex-direction: column-reverse;
+    }
+
+    .content-box .form-container .form-contatos {
+        flex-direction: row;
+        align-items: center;
+        border: none;
+    }
+
+    .content-box .form-container .form-contatos .redes-sociais {
+        gap: 10px;
+    }
 }
 
 /* MOBILE */
 @media (max-width: 450px) {
-    
+    .header .nav-bar li {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .header .nav-bar li a {
+        width: 60%;
+        text-align: center;
+    }
+
+    .main .content-box {
+        width: 70vw;
+    }
+
+    .sobre-nos, .dispositivo {
+        flex-direction: column;
+    }
+
+    .sobre-nos img, .projeto img, .form-container img {
+        width: 100%;
+    }
+
+    .projeto, .form-container {
+        flex-direction: column-reverse;
+    }
+
+    .content-box .form-container .form-contatos {
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        border: none;
+    }
+
+    .content-box .form-container .form-contatos .redes-sociais {
+        gap: 10px;
+    }
+
+    .content-box .form-formulario .inputs-nome input {
+        width: 100%;
+    }
+
+    .content-box .form-formulario .inputs-nome input:first-child {
+        margin-bottom: 10px;
+    }
 }
