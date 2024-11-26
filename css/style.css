@@ -81,7 +81,7 @@ body {
 }
 
 .main .content-box {
-    width: 60vw;
+    width: 70vw;
     background-color: rgba(255,255,255,.5);
     padding: 40px;
     border: 1px solid #fff;
@@ -170,7 +170,7 @@ body {
 }
 
 .dispositivo .img-dispositivo img {
-    width: 800px;
+    width: 40vw;
     border-radius: 20px;
     transition: .5s;
 }
@@ -367,6 +367,46 @@ body {
     }
 }
 
+@media (min-width: 451px) and (max-width: 767px) {
+    .main .content-box {
+        width: 80vw;
+    }
+
+    .sobre-nos, .dispositivo {
+        flex-direction: column;
+    }
+
+    .projeto, .form-container {
+        flex-direction: column-reverse;
+    }
+
+    .sobre-nos .img-sobre-nos img {
+        width: 100%;
+    }
+
+    .propjeto .img-projeto img {
+        height: 100%;
+    }
+
+    .dispositivo .img-dispositivo img {
+        width: 100%;
+    }
+
+    .contatos .form-container .form-img img {
+        width: 100%;
+    }
+
+    .content-box .form-container .form-contatos {
+        flex-direction: row;
+        align-items: center;
+        border: none;
+    }
+
+    .content-box .form-container .form-contatos .redes-sociais {
+        gap: 10px;
+    }
+}
+
 /* MOBILE */
 @media (max-width: 450px) {
     .header .nav-bar li {
@@ -393,6 +433,10 @@ body {
 
     .projeto, .form-container {
         flex-direction: column-reverse;
+    }
+
+    .projeto .img-projeto img {
+        height: 100%;
     }
 
     .dispositivo .img-dispositivo img {
