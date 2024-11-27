@@ -1,0 +1,128 @@
+:root {
+    --font-outfit: "Outfit", sans-serif;
+    --dark-blue: #264059;
+    --light-blue: #6EA0B1;
+    --dark-green: #475808;
+    --light-green: #9AB031;
+    --orange: #E5690B;
+    --brown: #9F5D35;
+    --area: #DECA98;
+    --dark-gray: #303030;
+}
+
+body {
+    height: 100vh;
+    background-image: url(../images/water-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: var(--font-outfit);
+    color: var(--dark-gray);
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    width: 50vw;
+    height: 50vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid gray;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: .5s;
+}
+
+.container:hover {
+    box-shadow: 0px 10px 30px 0px rgba(110,160,177,1);
+    transform: translateY(-7px);
+}
+
+.container .img {
+    width: 50%;
+    height: 100%;
+    background-color: var(--light-blue);
+    border-radius: 38px 0 0 38px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .img img {
+    width: 300px;
+}
+
+.container .img h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.container .form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    color: var(--dark-blue);
+}
+
+.container .form h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--dark-blue);
+}
+.container .form div {
+    margin-bottom: 20px;
+}
+
+.container .form .email input, .container .form .senha input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #264059;
+    margin-bottom: 10px;
+}
+
+.container .form .config-senha label{
+    margin-right: 30px;
+}
+
+.container .form .config-senha a {
+    color: #264059;
+    font-weight: bold;
+}
+
+.container .form .botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container .form .botoes a {
+    text-decoration: none;
+    transition: .5s;
+}
+
+.container .form .botoes a:hover {
+    box-shadow: 0px 10px 30px 0px rgba(110,160,177,1);
+    transform: translateY(-4px);
+}
+
+.container .form .btn-entrar {
+    border: 2px solid #264059;
+    border-radius: 10px;
+    padding: 10px 100px;
+    text-align: center;
+    color: #264059;
+}
+
+.container .form .btn-cadastrese {
+    background-color: #264059;
+    border-radius: 10px;
+    padding: 10px 100px;
+    color: #fff;
+}
+

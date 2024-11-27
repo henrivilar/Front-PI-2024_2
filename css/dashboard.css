@@ -1,0 +1,121 @@
+:root {
+    --font-outfit: "Outfit", sans-serif;
+    --dark-blue: #264059;
+    --light-blue: #6EA0B1;
+    --dark-green: #475808;
+    --light-green: #9AB031;
+    --orange: #E5690B;
+    --brown: #9F5D35;
+    --area: #DECA98;
+    --dark-gray: #303030;
+}
+
+body {
+    font-family: var(--font-outfit);
+    overflow: hidden;
+}
+
+header {
+    background-color: var(--dark-blue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+    border: 2px solid #303030;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+header .logo img {
+    width: 80px;
+}
+
+header .logo h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+header .buscar {
+    display: flex;
+    align-items: center;
+}
+
+header .buscar label {
+    color: #fff;
+    margin-right: 10px;
+}
+
+header .buscar input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid lightgray;
+    margin-left: 5px;
+}
+
+header .buscar input::placeholder,  header .buscar i {
+    color: lightgray;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.container .left {
+    width: 20vw;
+    height: 100vh;
+    background-color: var(--dark-blue);
+}
+
+.container .left .conta {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 2px solid #303030;
+}
+
+.container .left .conta img {
+    width: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.container .left .conta h3 {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.container .left .botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.container .left .botoes a {
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.container .left .botoes .active {
+    background-color: var(--light-blue);
+    border: 2px solid #303030;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.container .hero img {
+    width: 80vw;
+}
+
