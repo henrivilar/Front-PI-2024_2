@@ -12,6 +12,7 @@
 
 body {
     font-family: var(--font-outfit);
+    color: var(--dark-gray);
 }
 
 header {
@@ -63,13 +64,13 @@ header .buscar input::placeholder,  header .buscar i {
 
 .container {
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     display: flex;
 }
 
 .container .left {
     width: 20vw;
-    height: 100vh;
+    height: 95vh;
     background-color: var(--dark-blue);
 }
 
@@ -90,6 +91,48 @@ header .buscar input::placeholder,  header .buscar i {
 .container .left .conta h3 {
     font-size: 1.2rem;
     color: #fff;
+}
+
+.container .dispositivo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 0;
+}
+
+.container .dispositivo h4 {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #fff;
+}
+
+.container .dispositivo img {
+    width: 100%;
+}
+
+.container .dispositivo p {
+    color: #fff;
+    font-weight: lighter;
+    margin-left: 10px;
+}
+
+.container .dispositivo .vermelho::before {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.container .dispositivo .verde::before {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: green;
+    margin: 0 10px;
 }
 
 .container .left .botoes {
@@ -118,3 +161,69 @@ header .buscar input::placeholder,  header .buscar i {
     width: 80vw;
 }
 
+.container .hero h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.container .hero .sensores {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.container .descricao-sensores .circulo::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #303030;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.container .descricao-sensores .quadrado::before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border: 2px solid #303030;
+    margin-right: 10px;
+}
+
+.container .estado-sensores .verde::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: green;
+    margin-right: 10px;
+}
+
+.container .estado-sensores .amarelo::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: yellow;
+    margin-right: 10px;
+}
+
+.container .estado-sensores .azul::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: blue;
+    margin-right: 10px;
+}
+
+.container .estado-sensores .vermelho::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    margin-right: 10px;
+}
