@@ -33,6 +33,11 @@ header .logo {
 
 header .logo img {
     width: 80px;
+    transition: .3s;
+}
+
+header .logo img:hover {
+    scale: 1.1;
 }
 
 header .logo h1 {
@@ -141,6 +146,7 @@ header .buscar input::placeholder,  header .buscar i {
     flex-direction: column;
     align-items: center;
     gap: 30px;
+    padding: 20px 0;
 }
 
 .container .left .botoes a {

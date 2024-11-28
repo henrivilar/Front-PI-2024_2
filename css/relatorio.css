@@ -33,6 +33,11 @@ header .logo {
 
 header .logo img {
     width: 80px;
+    transition: .3s;
+}
+
+header .logo img:hover {
+    scale: 1.1;
 }
 
 header .logo h1 {
@@ -71,7 +76,7 @@ header .buscar input::placeholder,  header .buscar i {
 
 .container .left {
     width: 20vw;
-    height: 95vh;
+    height: 135vh;
     background-color: var(--dark-blue);
 }
 
@@ -99,6 +104,7 @@ header .buscar input::placeholder,  header .buscar i {
     flex-direction: column;
     align-items: center;
     gap: 30px;
+    padding: 20px 0;
 }
 
 .container .left .botoes a {
@@ -114,4 +120,123 @@ header .buscar input::placeholder,  header .buscar i {
     width: 100%;
     text-align: center;
     padding: 20px 0;
+}
+
+.container .hero .zonas {
+    width: 75vw;
+    background-color: var(--dark-blue);
+    margin: 20px;
+    border: 2px solid #303030;
+    border-radius: 20px;
+}
+
+.container .hero .zonas img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.container .hero .zonas .desc-zonas {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.container .hero .zonas .desc-zonas p {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.container .hero .zonas .desc-zonas .verde::before{
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: green;
+    margin-right: 10px;
+}
+
+.container .hero .zonas .desc-zonas .amarelo::before{
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: linear-gradient(90deg, rgba(255,255,0,1) 0%, rgba(0,0,255,1) 100%);
+    margin-right: 10px;
+}
+
+.container .hero .zonas .desc-zonas .vermelho::before{
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: red;
+    margin-right: 10px;
+}
+
+.container .hero h3 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.container .hero .notificacoes .alerta {
+    color: red;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-bottom: 1px solid #303030;
+    padding: 20px 0;
+}
+
+.container .hero .notificacoes {
+    border: 2px solid #303030;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.container .hero .notificacoes h4 {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.container .hero .notificacoes .infos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.container .hero .notificacoes .infos .problema p:first-child {
+    font-weight: bold;
+}
+
+.container .hero .notificacoes .infos .solucionado {
+    width: 400px;
+}
+
+.container .hero .notificacoes .infos .solucionado p:first-child {
+    font-weight: bold;
+}
+
+.container .hero>p {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.container .hero a {
+    font-size: 1.2rem;
+    color: var(--dark-gray);
+    padding: 10px 50px;
+    border: 2px solid #303030;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.container .hero a:hover {
+    background-color: var(--dark-blue);
+    color: #fff;
+    box-shadow: 0px 10px 30px 0px rgba(110,160,177,1);
+    transform: translateY(-4px);
 }
