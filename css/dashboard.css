@@ -266,6 +266,12 @@ header .buscar input::placeholder,  header .buscar i {
         justify-content: left;
         gap: 20px;
         border: none;
+        padding: 0;
+        margin: 10px;
+    }
+
+    .container .left .conta img {
+        width: 50px;
     }
 
     .container .left .menu {
@@ -309,6 +315,12 @@ header .buscar input::placeholder,  header .buscar i {
         justify-content: left;
         gap: 20px;
         border: none;
+        padding: 0;
+        margin: 10px;
+    }
+
+    .container .left .conta img {
+        width: 50px;
     }
 
     .container .left .menu {
