@@ -22,7 +22,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 100px;
-    border: 2px solid #303030;
+    border-bottom: 2px solid #303030;
 }
 
 header .logo {
@@ -97,6 +97,17 @@ header .buscar input::placeholder,  header .buscar i {
 .container .left .conta h3 {
     font-size: 1.2rem;
     color: #fff;
+}
+
+.container .left .menu .menu-mobile {
+    display: none;
+}
+
+.container .left .menu .menu-mobile div {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin-bottom: 6px;
 }
 
 .container .left .botoes {
@@ -239,4 +250,102 @@ header .buscar input::placeholder,  header .buscar i {
     color: #fff;
     box-shadow: 0px 10px 30px 0px rgba(110,160,177,1);
     transform: translateY(-4px);
+}
+
+@media (min-width: 620px) and (max-width: 1023px) {
+
+    header {
+        padding: 10px 50px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .container .left {
+        width: 100vw;
+        height: 10vh;
+    }
+
+    .container .left .conta {
+        width: 100vw;
+        justify-content: left;
+        gap: 20px;
+        border: none;
+    }
+
+    .container .left .menu {
+        display: flex;
+        align-items: center;
+        padding: 0 50px;
+    }
+
+    .container .left .menu .menu-mobile {
+        display: block;
+    }
+
+    .container .dispositivo, .container .left .botoes {
+        display: none;
+    }
+
+    .container .hero img {
+        width: 100vw;
+    }
+
+    .container .hero .zonas {
+        width: 95vw;
+    }
+}
+
+@media (max-width: 619px) {
+
+    header {
+        padding: 10px 50px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .container .left {
+        width: 100vw;
+        height: 10vh;
+    }
+
+    .container .left .conta {
+        width: 100vw;
+        justify-content: left;
+        gap: 20px;
+        border: none;
+    }
+
+    .container .left .menu {
+        display: flex;
+        align-items: center;
+        padding: 0 50px;
+    }
+
+    .container .left .menu .menu-mobile {
+        display: block;
+    }
+
+    .container .dispositivo, .container .left .botoes {
+        display: none;
+    }
+
+    .container .hero img {
+        width: 100vw;
+    }
+
+    .container .hero .zonas {
+        width: 93vw;
+    }
+
+    .container .hero .zonas .desc-zonas {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
 }
